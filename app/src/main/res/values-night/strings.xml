@@ -1,8 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">AI Art Maker</string>
     <string name="upload_photo">Upload Photo</string>
     <string name="upload_style">Upload Style</string>
     <string name="generate_art">Generate Art</string>
     <string name="overview_text">Make AI art with image style transfer. Use app to reimagine boring selfies, pet photos, and vacation pictures with different artistic styles. From Van Gogh to pixel art to Chinese paintings, mix and match disparate styles to generate captivating, customized images.</string>
-    <string name="mona_description">mona lisa image</string>
 </resources>

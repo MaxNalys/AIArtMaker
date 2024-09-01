@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marginTop">22dp</dimen>
+    <dimen name="marginBottom">22dp</dimen>
+    <dimen name="marginStart">16dp</dimen>
+    <dimen name="marginEnd">16dp</dimen>
+    <dimen name="mona_height">270dp</dimen>
+    <dimen name="btn_text_size">18sp</dimen>
+    <dimen name="overview_text_size">15sp</dimen>
+    <dimen name="header_text_size">30sp</dimen>
+
+</resources>
