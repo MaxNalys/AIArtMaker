@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/logo_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="@dimen/header_text_size"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/marginTop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/overview_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/overview_text_size"
+        android:text="@string/overview_text"
+        android:gravity="center"
+        android:layout_marginEnd="@dimen/marginEnd"
+        android:layout_marginStart="@dimen/marginStart"
+        android:layout_marginTop="@dimen/marginTop"
+        android:layout_marginBottom="@dimen/marginBottom"
+        app:layout_constraintTop_toBottomOf="@id/logo_text_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mona_height"
+        android:contentDescription="@string/mona_description"
+        android:src="@mipmap/ic_mona_lisa_foreground"
+        android:layout_marginTop="@dimen/marginTop"
+        app:layout_constraintTop_toBottomOf="@id/overview_text_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <!-- Upload Photo Button -->
+    <Button
+        android:id="@+id/upload_photo_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTop"
+        android:layout_marginStart="@dimen/marginStart"
+        android:layout_marginEnd="@dimen/marginEnd"
+        android:backgroundTint="#6200EE"
+        android:text="@string/upload_photo"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/btn_text_size"
+        android:padding="12dp"
+        android:background="@drawable/rounded_button"
+        app:layout_constraintTop_toBottomOf="@id/image_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Upload Style Button -->
+    <Button
+        android:id="@+id/upload_style_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTop"
+        android:layout_marginStart="@dimen/marginStart"
+        android:layout_marginEnd="@dimen/marginEnd"
+        android:backgroundTint="#03DAC5"
+        android:text="@string/upload_style"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/btn_text_size"
+        android:padding="12dp"
+        android:background="@drawable/rounded_button"
+        app:layout_constraintTop_toBottomOf="@id/upload_photo_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Generate Art Button -->
+    <Button
+        android:id="@+id/generate_art_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTop"
+        android:layout_marginStart="@dimen/marginStart"
+        android:layout_marginEnd="@dimen/marginEnd"
+        android:backgroundTint="#FF5722"
+        android:text="@string/generate_art"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/btn_text_size"
+        android:padding="12dp"
+        android:background="@drawable/rounded_button"
+        app:layout_constraintTop_toBottomOf="@id/upload_style_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
