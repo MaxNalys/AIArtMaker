@@ -36,13 +36,37 @@ android {
 }
 
 dependencies {
+    // Kotlin
+    implementation(libs.kotlin.stdlib)
 
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.material)
-    implementation(libs.androidx.activity)
-    implementation(libs.androidx.constraintlayout)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
+    // Core libraries
+    implementation (libs.androidx.core.ktx.v1120)
+    implementation (libs.androidx.appcompat)
+    implementation (libs.material.v190)
+    implementation (libs.androidx.constraintlayout)
+
+    // ViewModel and LiveData
+    implementation (libs.androidx.lifecycle.viewmodel.ktx)
+    implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.8.4")
+
+    // Retrofit for API requests
+    implementation (libs.retrofit)
+    implementation (libs.converter.gson)
+    implementation (libs.okhttp)
+    implementation (libs.logging.interceptor)
+
+    // Coroutine support for Retrofit
+    implementation (libs.kotlinx.coroutines.core)
+    implementation (libs.kotlinx.coroutines.android)
+
+    // File Handling and URI Utils
+    implementation (libs.androidx.documentfile)
+
+    // Image Loading (Optional for loading images into ImageView)
+    implementation (libs.glide)
+
+    // Testing
+    testImplementation ("junit:junit:4.13.2")
+    androidTestImplementation ("androidx.test.ext:junit:1.1.5")
+    androidTestImplementation ("androidx.test.espresso:espresso-core:3.5.1")
 }
